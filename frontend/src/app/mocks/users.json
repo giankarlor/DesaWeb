@@ -1,0 +1,12 @@
+[
+  {
+    "email": "correo1@correo.com",
+    "password": "12345",
+    "token": "abcdefghij"
+  },
+  {
+    "email": "correo2@correo.com",
+    "password": "12345",
+    "token": "abcdefghij"
+  }
+]

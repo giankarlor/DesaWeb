@@ -1,0 +1,17 @@
+<mat-toolbar fxLayout fxLayoutAlign="space-between center">
+  <h3>Facturas</h3>
+  <div>
+    <button mat-icon-button mat-dialog-close>
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+<mat-divider></mat-divider>
+<div fxLayout fxLayoutGap="40px">
+  <div fxFlex="33">
+    <app-table [list]="list" [columns]="metaColumns" (onClick)="showDetails($event)"></app-table>
+  </div>
+  <div fxFlex="66">
+    <app-table [list]="listDetails" [columns]="metaColumnsDetails"></app-table>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<h3>{{title}}</h3>
+<mat-dialog-content>
+  <form (ngSubmit)="action()" fxLayout="column" [formGroup]="group">
+    <mat-form-field appearance="outline">
+      <mat-label>
+        Nombre
+      </mat-label>
+      <input type="text" matInput name="name" required formControlName="name">
+      <mat-error *ngIf="group.get('name').hasError('required') && group.get('name').touched">El nombre es requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>
+        Apellido
+      </mat-label>
+      <input type="text" matInput name="lastname" required formControlName="lastname">
+      <mat-error *ngIf="group.get('lastname').hasError('required') && group.get('lastname').touched">El apellido es
+        requerido
+      </mat-error>
+    </mat-form-field>
+    <div>
+      <button mat-flat-button color="primary">Grabar</button>
+      <button mat-button mat-dialog-close>Cerrar</button>
+    </div>
+  </form>
+</mat-dialog-content>

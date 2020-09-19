@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "clientId": 1,
+    "createdBy": "Alfonso",
+    "details": [
+      {
+        "productName": "Producto01",
+        "quantity": 3,
+        "subTotal": 120
+      },
+      {
+        "productName": "Producto02",
+        "quantity": 30,
+        "subTotal": 1000
+      },
+      {
+        "productName": "Producto03",
+        "quantity": 4,
+        "subTotal": 56
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "clientId": 1,
+    "createdBy": "Pedro",
+    "details": [
+      {
+        "productName": "Producto05",
+        "quantity": 30,
+        "subTotal": 120
+      },
+      {
+        "productName": "Producto08",
+        "quantity": 300,
+        "subTotal": 1000
+      },
+      {
+        "productName": "Producto03",
+        "quantity": 4,
+        "subTotal": 56
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "clientId": 2,
+    "createdBy": "Alicia",
+    "details": [
+      {
+        "productName": "Producto08",
+        "quantity": 8,
+        "subTotal": 85
+      },
+      {
+        "productName": "Producto09",
+        "quantity": 78,
+        "subTotal": 80
+      },
+      {
+        "productName": "Producto02",
+        "quantity": 40,
+        "subTotal": 786
+      }
+    ]
+  }
+]

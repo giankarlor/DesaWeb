@@ -1,0 +1,17 @@
+<div fxLayout fxLayoutGap="20px">
+  <nav fxLayout>
+    <button mat-button (click)="goTo('')">HOME</button>
+    <button mat-button (click)="goTo('employee')">EMPLEADOS</button>
+    <button mat-button (click)="goTo('client')">CLIENTES</button>
+  </nav>
+  <div fxLayout>
+    <button mat-flat-button (click)="goTo('login')" *ngIf="isVisibleButtonLogin">
+      <mat-icon>lock_open</mat-icon>
+      Ingresar
+    </button>
+    <button mat-flat-button *ngIf="!isVisibleButtonLogin" (click)="logout()">
+      <mat-icon>lock</mat-icon>
+      Cerrar sesión
+    </button>
+  </div>
+</div>

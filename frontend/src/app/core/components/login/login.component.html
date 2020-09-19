@@ -1,0 +1,32 @@
+<app-headline title="Login"></app-headline>
+<div fxLayout fxLayoutAlign="center">
+  <mat-card class="mat-elevation-z12" fxFlex="1 1 400px">
+    <h3>Ingrese sus credenciales</h3>
+    <form [formGroup]="group" (ngSubmit)="login()" fxLayout="column">
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Correo
+        </mat-label>
+        <mat-icon matPrefix>email</mat-icon>
+        <input type="text" matInput name="email" required formControlName="email">
+        <mat-error *ngIf="group.get('email').hasError('required') && group.get('email').touched">El correo es requerido
+        </mat-error>
+        <mat-error *ngIf="group.get('email').hasError('email') && group.get('email').touched">Debe ser un correo
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Contraseña
+        </mat-label>
+        <mat-icon matPrefix>lock</mat-icon>
+        <input type="password" matInput name="password" required formControlName="password">
+        <mat-error *ngIf="group.get('password').hasError('required') && group.get('password').touched">La contraseña es
+          requerida
+        </mat-error>
+      </mat-form-field>
+      <div fxLayout fxLayoutAlign="center">
+        <button mat-flat-button color="primary" [disabled]="group.invalid">Ingresar</button>
+      </div>
+    </form>
+  </mat-card>
+</div>
